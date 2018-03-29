@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    .conten
+        h4 Halo, #{username}!
+        br
+        a(href="/cards") Let's Go!
+        br
+        form(action="/goodbye" method="POST")
+            input(type="submit" value="LOG OUT")

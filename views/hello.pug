@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    .content
+        if username
+            h4= username
+        form(action="/hello" method="POST")
+            input(type="text" name="username" placeholder="diisi ya")
+            input(type="submit" value="submit")
